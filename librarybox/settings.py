@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 
 from pathlib import Path
 import environ
+import os
 
 env = environ.Env()
 environ.Env.read_env()  # Read .env file if it exists
@@ -83,7 +84,7 @@ DATABASES = {
     #    'NAME': BASE_DIR / 'db.sqlite3',
     'default': env.db(),  # reads DATABASE_URL from .env
     }
-}
+#}
 
 
 # Password validation
@@ -120,4 +121,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
