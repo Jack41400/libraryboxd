@@ -79,17 +79,37 @@
     ├─ core/
     │  ├─ __pycache__/
     │  ├─ migrations/
+    │  │  ├─ __pycache__/
+    │  │  ├─ __init__.py
+    │  ├─ __init__.py
+    │  ├─ admin.py
+    │  ├─ apps.py
+    │  ├─ models.py
+    │  ├─ tests.py
+    │  ├─ urls.py
+    │  ├─ views.py
     ├─ deploy/
+    │  ├─ deploy.sh
+    │  ├─ notes.md*
+    ├─ dockerfile/
     ├─ env/
     │  ├─ Include/
-    │  ├─ Lib/
+    │  ├─ Lib \ site-packages/
     │  ├─ Scripts/
+    │  ├─ .gitignore
+    │  ├─ pyvenv.cfg
     ├─ libraryboxd/
     │  ├─ __pycache__/
+    │  ├─ __init__.py
+    │  ├─ .env
+    │  ├─ asgi.py
+    │  ├─ settings.py
+    │  ├─ urls.py
+    │  ├─ wsgi.py
+    ├─ staticfiles \ admin/
     │  ├─ css/
     │  ├─ img/
     │  ├─ js/
-    ├─ staticfiles/admin/
     ├─ .env.example
     ├─ .gitignore
     ├─ manage.py
