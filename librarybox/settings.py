@@ -17,6 +17,10 @@ import os
 env = environ.Env()
 environ.Env.read_env()  # Read .env file if it exists
 
+# Timezone settings
+TIME_ZONE = 'America/Chicago'  # example; set to your actual timezone
+USE_TZ = True
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -33,6 +37,9 @@ DEBUG = env.bool('DEBUG', default=False)
 # Allowed hosts in env file. default is empty list for development, but should be set to actual hostnames in production.
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=[])
 
+# Authourized user definition
+AUTH_USER_MODEL = 'auth.User'  # Using Django's built-in User model for now
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -43,6 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'librarybox',
 ]
 
 MIDDLEWARE = [
