@@ -3,11 +3,12 @@ from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
-
+# User profile features -
 class UserProfile(models.Model):
     """
     Extension of Django's built-in User model for libraryboxd-specific data.
     """
+    # User var = one to one with django built in user model, cascade delete, related name is profile
     user = models.OneToOneField(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,

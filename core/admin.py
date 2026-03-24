@@ -1,6 +1,5 @@
 from django.contrib import admin
 from django.utils.html import format_html
-
 from .models import Book, ReadingEntry, UserProfile
 from django.contrib.auth import get_user_model
 

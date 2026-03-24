@@ -1,6 +1,7 @@
-from django.urls import path
-from .views import hello_world
+from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
-    path('', hello_world),
+    path('admin/', admin.site.urls),            # ← add this line
+    path('', include('librarybox.urls')),       # ← your app's URLs (hello world, etc.)
 ]
