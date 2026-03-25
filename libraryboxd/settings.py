@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'core',
 # Third-party or contrib helpers
     'django.contrib.humanize',
-    'librarybox',
+    'libraryboxd',
 ]
 
 MIDDLEWARE = [
@@ -81,7 +81,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'librarybox.wsgi.application'
+WSGI_APPLICATION = 'libraryboxd.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
