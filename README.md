@@ -1,4 +1,4 @@
-# librarybox
+# libraryboxd
 
 An internal web application for managing and tracking book diaries, reviews, and maintaining my home library. Inspired by Letterboxd, but for books!
 
